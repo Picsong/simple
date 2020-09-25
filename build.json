@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    [
+      "build-plugin-fusion",
+      {
+        "themePackage": "@alifd/theme-design-pro"
+      }
+    ],
+    ["build-plugin-ice-auth"]
+  ],
+  "hash": true
+}
