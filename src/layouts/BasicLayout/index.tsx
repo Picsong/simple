@@ -60,12 +60,12 @@ const BasicLayout: FC = ({ children }) => {
     if (localStorage.getItem('token')) {
       request();
     }
-  }, []);
+  }, [request]);
   return (
     <ConfigProvider device={device}>
       <Shell type="brand" fixedHeader style={{ minHeight: '100vh' }}>
         <Shell.Branding>
-          <img className={styles.rectangular} src="/public/favicon.png" />
+          <img className={styles.rectangular} src="/public/favicon.png" alt="logo" />
           <span style={{ marginLeft: 10 }}>App Name</span>
         </Shell.Branding>
         <Shell.Navigation direction="hoz" align="left">
