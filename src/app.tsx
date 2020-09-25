@@ -2,6 +2,7 @@ import React from 'react';
 import { createApp, IAppConfig, config } from 'ice';
 import { getInitialData } from '@/services/user';
 import NoAuth from '@/components/NoAuth';
+
 const appConfig: IAppConfig = {
   app: {
     rootId: 'ice-container',
@@ -10,7 +11,7 @@ const appConfig: IAppConfig = {
   },
   auth: {
     // 可选的，设置无权限时的展示组件，默认为 null
-    NoAuthFallback: <NoAuth></NoAuth>
+    NoAuthFallback: <NoAuth />
   },
   router: {
     fallback: <div>loading...</div>
